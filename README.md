@@ -1,16 +1,30 @@
-# React + Vite
+CarScope
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A car market tool I built with React + Vite. You type in a VIN or a model name and it gives you a price estimate, known reliability issues, and maintenance reminders for that vehicle.
+What it does
 
-Currently, two official plugins are available:
+VIN lookup using the NHTSA API (free, no key needed)
+Model search — just type something like "2018 BMW 420d"
+Price range estimate based on age and depreciation
+6-month valuation trend chart
+Common faults and risk levels per model
+Basic maintenance interval reminders
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Stack:
 
-## React Compiler
+- React 19 + Vite 8
+- Chart.js for the valuation graph
+- NHTSA API for VIN decoding
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##Run it locally:
+- bashnpm install
+- npm run dev
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+"Notes"
+
+The pricing is calculated from a depreciation model, not live listings. The VIN decoding is real though — it hits the NHTSA database. A proper market API like MarketCheck would replace the mock pricing in a production version.
+
+Author:
+
+Jonne Virtanen — LinkedIn — GitHub
