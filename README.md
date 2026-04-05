@@ -1,4 +1,4 @@
-CarScope
+# CarStream
 
 A car market tool I built with React + Vite. You type in a VIN or a model name and it gives you a price estimate, known reliability issues, and maintenance reminders for that vehicle.
 
