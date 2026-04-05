@@ -7,7 +7,7 @@ function App() {
     <div className="app-container">
       <nav className="navbar">
         <div className="logo">
-          <span className="logo-accent">Car</span>Scope
+          <span className="logo-accent">Car</span>Stream
         </div>
       </nav>
       <main>
